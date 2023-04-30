@@ -1,0 +1,48 @@
+Started by user Priya Venkatesh
+Running as SYSTEM
+Building on the built-in node in workspace D:\priya\Assignments
+[Assignments] $ cmd /c call C:\WINDOWS\TEMP\jenkins12245777904015977455.bat
+
+D:\priya\Assignments>java TestCase.java 
+Welcome to the Test Case Metrics  section
+This program is the test for Metrics section of assignment
+
+D:\priya\Assignments>exit 0 
+[Assignments] $ cmd.exe /C "C:\ProgramData\Jenkins\.jenkins\tools\hudson.tasks.Maven_MavenInstallation\MyMaven\bin\mvn.cmd clean test && exit %%ERRORLEVEL%%"
+[INFO] Scanning for projects...
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  0.078 s
+[INFO] Finished at: 2023-04-20T23:15:33-04:00
+[INFO] ------------------------------------------------------------------------
+[ERROR] The goal you specified requires a project to execute but there is no POM in this directory (D:\priya\Assignments). Please verify you invoked Maven from the correct directory. -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MissingProjectException
+Build step 'Invoke top-level Maven targets' marked build as failure
+[Cobertura] Publishing Cobertura coverage report...
+
+FATAL: Unable to find coverage results
+java.io.IOException: D:\priya\Assignments\CIGNITI Technologies.txt is not an XML file, please check your report pattern
+	at hudson.plugins.cobertura.CoberturaPublisher$ParseReportCallable.invoke(CoberturaPublisher.java:919)
+	at hudson.plugins.cobertura.CoberturaPublisher$ParseReportCallable.invoke(CoberturaPublisher.java:883)
+	at hudson.FilePath.act(FilePath.java:1198)
+	at hudson.FilePath.act(FilePath.java:1181)
+	at hudson.plugins.cobertura.CoberturaPublisher.perform(CoberturaPublisher.java:550)
+	at jenkins.tasks.SimpleBuildStep.perform(SimpleBuildStep.java:123)
+	at hudson.tasks.BuildStepCompatibilityLayer.perform(BuildStepCompatibilityLayer.java:80)
+	at hudson.tasks.BuildStepMonitor$1.perform(BuildStepMonitor.java:20)
+	at hudson.model.AbstractBuild$AbstractBuildExecution.perform(AbstractBuild.java:818)
+	at hudson.model.AbstractBuild$AbstractBuildExecution.performAllBuildSteps(AbstractBuild.java:767)
+	at hudson.model.Build$BuildExecution.post2(Build.java:179)
+	at hudson.model.AbstractBuild$AbstractBuildExecution.post(AbstractBuild.java:711)
+	at hudson.model.Run.execute(Run.java:1925)
+	at hudson.model.FreeStyleBuild.run(FreeStyleBuild.java:44)
+	at hudson.model.ResourceController.execute(ResourceController.java:101)
+	at hudson.model.Executor.run(Executor.java:442)
+ERROR: Step  Publish Cobertura Coverage Report  failed: [Cobertura] Unable to find coverage results
+Finished: FAILURE

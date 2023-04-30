@@ -1,0 +1,18 @@
+Steps taken to complete the assignment
+git init
+git add *
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/PriyaV-github/ContTraining_Mod2_Sample_Project.git
+git push -u origin main
+git branch Mike_feature
+git checkout Mike_feature
+Made changes to the html file
+git push origin Mike_feature
+
+Pull request and merge on github.com
+
+Remote repository with the 2 branches -  https://github.com/PriyaV-github/ContTraining_Mod2_Sample_Project
+
+
+
